@@ -13,6 +13,9 @@
     tools:context="com.android.ssuncake.myapplication.MainActivity">
 
     <ScrollView
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:id="@+id/scrollView_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -137,6 +140,8 @@
             </RelativeLayout>
 
             <ListView
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:id="@+id/listView_btList_found"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"></ListView>
