@@ -12,64 +12,141 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.android.ssuncake.myapplication.MainActivity">
 
-    <TextView
-        android:id="@+id/btState"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/enable"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="블루투스 켜기" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/disable"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="블루투스 끄기" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_line" />
 
-    <TextView
-        android:id="@+id/isEnable"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="장치 확인" />
+            <TextView
+                android:id="@+id/btState"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
 
-    <TextView
-        android:id="@+id/getState"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="getState" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/getAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="getAddress" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="5"
+                    android:id="@+id/enable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="블루투스 켜기" />
 
-    <TextView
-        android:id="@+id/getName"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:text="getName" />
+                <ToggleButton
+                    android:layout_weight="1"
+                    android:id="@+id/toggleButton_bt_onOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/editText_inputName"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2" />
+            <TextView
+                android:id="@+id/isEnable"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="장치 확인" />
 
-        <TextView
-            android:id="@+id/setName"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:text="setName" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/getState"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="getState" />
 
+            <TextView
+                android:id="@+id/getAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="getAddress" />
+
+            <TextView
+                android:id="@+id/getName"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="getName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_inputName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/setName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="setName" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_line" />
+
+            <ListView
+                android:id="@+id/listView_btList"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"></ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/onbutton"
+                    android:layout_toLeftOf="@+id/toggleButton"
+                    android:layout_toRightOf="@+id/onbutton"
+                    android:background="@drawable/shape_line" />
+
+                <Button
+                    android:id="@+id/onbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on" />
+
+                <Button
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="off" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/listView_btList_found"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_line" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
