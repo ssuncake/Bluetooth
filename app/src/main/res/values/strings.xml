@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyApplication</string>
+    <string name="sensorData_UUID">f00ab81-0451-4000-b000-000000000000</string>
+    <string name="sensorDataPM25_UUID">f00ab81-0451-4000-b000-000000000000</string>
 </resources>
