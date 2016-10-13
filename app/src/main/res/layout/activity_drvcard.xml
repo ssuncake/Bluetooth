@@ -4,28 +4,140 @@
     android:id="@+id/activity_drvcard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.android.ssuncake.myapplication.DRVcardActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.android.ssuncake.myapplication.DRVcardActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="스캔한 장치의 이름과 주소값 입니다."/>
+        android:text="@string/scan_device_message" />
+
     <TextView
         android:id="@+id/textVIew_deviceName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15dp" />
+        android:textSize="@dimen/textSize_scanDevice_name" />
 
     <TextView
         android:id="@+id/textView_deviceAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:layout_below="@+id/textVIew_deviceName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="@dimen/textSize_scanDevice_address" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_default_height"
+        android:background="@drawable/shape_line" />
+
+    <Button
+        android:id="@+id/button_date_Update_DRVcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update" />
+
+    <TextView
+        android:id="@+id/textView_current_date_DRVcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_default_height"
+        android:background="@drawable/shape_line" />
+
+    <Button
+        android:id="@+id/button_connect_DRVcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+    <Button
+        android:id="@+id/button_disconnect_DRVcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DisConnect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_scandata"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PM25 : " />
+
+        <TextView
+            android:id="@+id/pm25_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="voc_scan : " />
+
+        <TextView
+            android:id="@+id/voc_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="co2_scan : " />
+
+        <TextView
+            android:id="@+id/co2_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tempreture_scan : " />
+
+        <TextView
+            android:id="@+id/tempreture_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="humidity_scan : " />
+
+        <TextView
+            android:id="@+id/humidity_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
 </LinearLayout>

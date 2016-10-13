@@ -2,4 +2,11 @@
     <string name="app_name">MyApplication</string>
     <string name="sensorData_UUID">f00ab81-0451-4000-b000-000000000000</string>
     <string name="sensorDataPM25_UUID">f00ab81-0451-4000-b000-000000000000</string>
+    <string name="scan_device_message">스캔한 장치의 이름과 주소값 입니다.</string>
+    <string name="update">현재시간 Update</string>
+    <string name="current_time">현재시간 :</string>
+
+    <string name="update_time_message">현재시간이 업데이트 되었습니다.</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">disconnected</string>
 </resources>
