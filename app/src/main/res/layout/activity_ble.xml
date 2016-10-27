@@ -131,4 +131,25 @@
             android:layout_height="wrap_content"
             android:id="@+id/text_data_pm25"/>
     </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DB_INSERT"
+        android:id="@+id/btn_insert"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DB_SELECT"
+        android:id="@+id/btn_select"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DB_delete"
+        android:id="@+id/btn_delete"/>
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DB_UPDATE"
+        android:id="@+id/btn_update"/>
+
 </LinearLayout>
